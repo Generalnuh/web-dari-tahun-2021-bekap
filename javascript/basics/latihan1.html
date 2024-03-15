@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan 1</title>
+  </head>
+  <body
+    style="
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: brown;
+    "
+  >
+    <h1 style="color: gold; font-size: 28px; font-family: cursive">Output:</h1>
+    <script>
+      // hai dunia
+      document.writeln("hai dunia ku tercinta");
+
+      var angka = new Array("satu", "dua", "tiga", "empat");
+      var foundEmpat = false; // Variable to track if "empat" is found
+
+      for (var i = 0; i < angka.length; i++) {
+        if (angka[i] === "empat") {
+          document.writeln("ini angka empat" + "<br>");
+          foundEmpat = true;
+          break;
+        }
+      }
+
+      if (!foundEmpat) {
+        document.writeln("salah tidak menytakan angka empat");
+      }
+    </script>
+  </body>
+</html>
